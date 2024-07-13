@@ -1,0 +1,109 @@
+footer {}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-panel1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 1.5rem;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 0.85rem;
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    height: 70px;
+    color: white;
+    border-top: 0.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    border: 1px solid white;
+}
+
+.language select {
+    background-color: #222f3d;
+    border: none;
+    color: white;
+    margin-left: 3px;
+}
+
+.currency {
+    justify-content: space-around;
+    width: 150px;
+}
+
+.footer-country {
+    display: flex;
+    width: 120px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    height: 40px;
+    width: 130px;
+}
+
+.us_flag-footer {
+    background-image: url(us_flag.png);
+    background-size: cover;
+    width: 19px;
+    height: 16px;
+}
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 25px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    margin: 10px;
+}
