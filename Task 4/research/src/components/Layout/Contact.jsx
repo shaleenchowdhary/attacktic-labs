@@ -1,7 +1,6 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
-
 const Contact = () => {
+  const hospitalCoordinates = '28.433264754392017,77.5310409766999';
+
   return (
     <div className="w-full py-10">
       <div className="w-11/12 h-3/5 flex p-10 border border-gray-500 rounded-lg shadow-md shadow-gray-500 mx-auto">
@@ -11,6 +10,15 @@ const Contact = () => {
             <h3 className="text-xl">For any questions or concerns</h3>
             <h3 className="text-xl">call 123-456-7890</h3>
             <h3 className="text-xl">or fill out our form</h3>
+          </div>
+          <div>
+            <iframe
+              src={`https://www.openstreetmap.org/export/embed.html?bbox=77.5269,28.4318,77.5351,28.4347&layer=mapnik&marker=${hospitalCoordinates}`}
+              width="90%"
+              height="300"
+              style={{ border: 0 }}
+              title="Hospital Location"
+            />
           </div>
         </div>
         <div className="w-full h-full px-4">
