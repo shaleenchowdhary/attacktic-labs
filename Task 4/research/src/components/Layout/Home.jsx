@@ -1,4 +1,6 @@
-const Content = () => {
+import { Link } from 'react-router-dom';
+
+const Home = () => {
   const imageUrl1 =
     'https://static.wixstatic.com/media/11062b_492005d00e8844a991e7d7ff0f68d834~mv2.jpeg/v1/fill/w_980,h_859,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_492005d00e8844a991e7d7ff0f68d834~mv2.jpeg';
   const imageUrl2 =
@@ -26,7 +28,7 @@ const Content = () => {
               pursuing their interests in research, and provide technical and
               scientific manpower through collaborative projects.
             </p>
-            <button className="bg-blue-800 text-white px-8 py-2 rounded-lg font-semibold hover:bg-blue-100 hover:text-blue-800">
+            <button className="bg-blue-800 text-white px-8 py-2 rounded-lg box-border font-semibold border border-transparent hover:bg-blue-100 hover:text-blue-800 hover:border-blue-800">
               Explore Services{' '}
               <span>
                 <i className="fa-solid fa-circle-arrow-right"></i>
@@ -136,23 +138,27 @@ const Content = () => {
         <hr className="border-t-2 border-black my-5" />
         <div className="w-1/2 bg-white text opacity-50 py-4 px-4 rounded-xl hover:opacity-100 mb-5">
           <h4 className="text-xl font-medium text-black">
-            Molecular Diagnostic
-          </h4>
-          <p className="text-sm">Research laboratory</p>
-        </div>
-        <div className="w-1/2 bg-white text opacity-50 py-4 px-4 rounded-xl hover:opacity-100 mb-5">
-          <h4 className="text-xl font-medium text-black">
-            Multi-disciplinary research unit
+            Molecular Diagnostic & Research Laboratory (MDRL)
           </h4>
         </div>
         <div className="w-1/2 bg-white text opacity-50 py-4 px-4 rounded-xl hover:opacity-100 mb-5">
           <h4 className="text-xl font-medium text-black">
-            Viral Research & Diagnostics Laboratory
+            Multi-disciplinary Research Unit (MRU)
           </h4>
         </div>
         <div className="w-1/2 bg-white text opacity-50 py-4 px-4 rounded-xl hover:opacity-100 mb-5">
           <h4 className="text-xl font-medium text-black">
-            Genome Sequencing facility
+            Viral Research and Diagnostics Laboratory (VRDL)
+          </h4>
+        </div>
+        <div className="w-1/2 bg-white text opacity-50 py-4 px-4 rounded-xl hover:opacity-100 mb-5">
+          <h4 className="text-xl font-medium text-black">
+            Genome Sequencing Facility
+          </h4>
+        </div>
+        <div className="w-1/2 bg-white text opacity-50 py-4 px-4 rounded-xl hover:opacity-100 mb-5">
+          <h4 className="text-xl font-medium text-black">
+            Cell culture laboratory with BSL2+ facility
           </h4>
         </div>
       </div>
@@ -166,16 +172,19 @@ const Content = () => {
             <p className="my-8">
               Discover the state-of-the-art facilities at My Site, equipped with
               advanced technology to ensure accurate and efficient services.
-              Click 'Edit Text' to add your own content and make changes to the
+              Click 'Edit Text' to add your own Home and make changes to the
               font.
             </p>
-            <button className="bg-blue-800 text-white px-8 py-2 rounded-lg font-semibold hover:bg-blue-100 hover:text-blue-800">
+            <Link
+              to="/about"
+              className="bg-blue-800 text-white px-8 py-2 rounded-lg font-semibold hover:bg-blue-100 hover:text-blue-800"
+            >
               Take A Tour
-            </button>
+            </Link>
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default Content;
+export default Home;

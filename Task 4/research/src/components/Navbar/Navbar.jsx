@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <header className="w-full">
@@ -28,13 +30,17 @@ const Navbar = () => {
       <nav className="bg-blue-900 py-1 px-2">
         <div className="flex justify-between items-center">
           <ul className="list-none flex-grow flex justify-center gap-x-8 font-semibold text-white">
-            <li className="hover:text-gray-300 hover:cursor-pointer">Home</li>
             <li className="hover:text-gray-300 hover:cursor-pointer">
-              Research
+              <Link to="/">Home</Link>
             </li>
-            <li className="hover:text-gray-300 hover:cursor-pointer">About</li>
             <li className="hover:text-gray-300 hover:cursor-pointer">
-              Contact
+              <Link to="/about">About</Link>
+            </li>
+            <li className="hover:text-gray-300 hover:cursor-pointer">
+              <Link to="/research">Research</Link>
+            </li>
+            <li className="hover:text-gray-300 hover:cursor-pointer">
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
           <button className="bg-white text-blue-600 px-4 py-1 rounded-lg font-semibold hover:bg-blue-300 hover:text-white">

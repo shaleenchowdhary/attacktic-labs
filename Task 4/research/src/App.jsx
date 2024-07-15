@@ -1,14 +1,10 @@
 import './App.css';
-import Content from './components/Body/Content';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Content />
-      <Footer />
+      <Layout />
     </>
   );
 }
