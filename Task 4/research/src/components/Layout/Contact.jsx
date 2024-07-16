@@ -27,6 +27,7 @@ const Contact = () => {
               <div className="flex flex-col text-left w-full">
                 <label htmlFor="firstname">Firstname</label>
                 <input
+                  required
                   type="text"
                   id="firstname"
                   className="h-10 border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -44,6 +45,7 @@ const Contact = () => {
             <div className="flex flex-col text-left my-4">
               <label htmlFor="email">Email*</label>
               <input
+                required
                 type="email"
                 id="email"
                 className="h-10 border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -51,7 +53,10 @@ const Contact = () => {
             </div>
             <div className="flex flex-col text-left">
               <label htmlFor="message">Message</label>
-              <textarea className="border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              <textarea
+                required
+                className="border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
             </div>
             <button className="bg-blue-800 w-full my-10 text-white px-8 py-2 rounded-lg font-semibold hover:bg-blue-200 hover:text-blue-800">
               Submit
