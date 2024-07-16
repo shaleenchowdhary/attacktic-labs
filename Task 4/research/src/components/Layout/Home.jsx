@@ -117,9 +117,12 @@ const Home = () => {
                 Biotechnology students
               </li>
             </ul>
-            <button className="bg-blue-800 text-white px-8 py-2 rounded-lg font-semibold hover:bg-blue-100 hover:text-blue-800">
+            <Link
+              to="/research"
+              className="bg-blue-800 text-white px-8 py-2 rounded-lg font-semibold hover:bg-blue-100 hover:text-blue-800"
+            >
               Discover More
-            </button>
+            </Link>
           </div>
         </div>
         <div className="w-full rounded-md overflow-hidden">

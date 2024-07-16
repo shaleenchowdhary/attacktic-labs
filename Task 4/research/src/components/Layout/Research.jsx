@@ -1,12 +1,6 @@
 const Research = () => {
-  const imageUrl1 =
-    'https://static.wixstatic.com/media/11062b_492005d00e8844a991e7d7ff0f68d834~mv2.jpeg/v1/fill/w_980,h_859,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_492005d00e8844a991e7d7ff0f68d834~mv2.jpeg';
-  const imageUrl2 =
-    'https://static.wixstatic.com/media/7fe3aa9f27174e71a08f03e22a50586c.jpg/v1/fill/w_1225,h_1249,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7fe3aa9f27174e71a08f03e22a50586c.jpg';
-  const imageUrl3 =
-    'https://static.wixstatic.com/media/82fcd3_9de2b3736dd24d02a9a63b2cd6c1e742~mv2.jpg/v1/fill/w_1225,h_1095,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/82fcd3_9de2b3736dd24d02a9a63b2cd6c1e742~mv2.jpg';
   return (
-    <div>
+    <div id="research">
       <div className="w-full flex justify-center my-10">
         <div className="w-11/12 flex items-center justify-center text-slate-800">
           <div className="bg-blue-200 bg-opacity-30 p-10 rounded-lg shadow-md shadow-gray-400 border border-black text-left">
