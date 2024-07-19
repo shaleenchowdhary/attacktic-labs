@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-footerColor text-white">
-      <div className="mx-auto lg:mx-20">
+      <div className="mx-auto lg:mx-20 text-sm sm:text-base">
         <div className="py-12 px-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-left">
               <div className="mb-4">
                 <Link to="/">
                   <img
                     src="https://gims.ac.in/assets/img/gims/logo-gims.png"
                     alt="Logo"
-                    className="w-1/2 h-auto"
+                    className="sm:w-1/2 h-auto w-28"
                   />
                 </Link>
               </div>
@@ -197,7 +197,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer__bottom bg-gray-800 py-4">
+      <div className="footer__bottom bg-gray-800 py-4 text-xs sm:text-sm">
         <div className="container mx-auto">
           <div className="text-center">
             <p>
@@ -218,91 +218,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// <footer className="w-full bg-blue-100 p-4 pb-1 relative flex flex-col justify-between">
-//   <div className="w-full flex gap-x-2 pb-2">
-//     <div className="w-full flex flex-col text-left">
-//       <h3 className="text-2xl">Heading</h3>
-//       <ul>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//       </ul>
-//     </div>
-//     <div className="w-full flex flex-col text-left">
-//       <h3 className="text-2xl">Heading</h3>
-//       <ul>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//       </ul>
-//     </div>
-//     <div className="w-full flex flex-col text-left">
-//       <h3 className="text-2xl">Heading</h3>
-//       <ul>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//       </ul>
-//     </div>
-//     <div className="w-full flex flex-col text-left">
-//       <h3 className="text-2xl">Heading</h3>
-//       <ul>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//         <li>
-//           <a href="#">Link</a>
-//         </li>
-//       </ul>
-//     </div>
-//   </div>
-//   <p className="relative bottom-0 left-1/2 transform -translate-x-1/2 mb-0">
-//     @2024 all rights reserved
-//   </p>
-// </footer>
