@@ -197,7 +197,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer__bottom bg-gray-800 py-4 text-xs sm:text-sm">
+      <div className="bg-gray-800 py-4 text-xs sm:text-sm">
         <div className="container mx-auto">
           <div className="text-center">
             <p>
