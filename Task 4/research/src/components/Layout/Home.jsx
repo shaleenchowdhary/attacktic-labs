@@ -18,7 +18,7 @@ const Home = () => {
             <h2 className="font-semibold md:text-3xl text-lg sm:mb-4 mb-2">
               Department of Research & Development (Research Wing)
             </h2>
-            <p className="mb-2 font-semibold md:text-base text-sm">
+            <p className="mb-2 font-semibold lg:text-xl text-sm">
               The Department of Research & Development (Research Wing) was
               established in 2020 and is a central facility with
               state-of-the-art equipment to support clinical research and
@@ -37,7 +37,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 w-full p-4 bg-blue-100">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 w-full p-4 bg-blue-100 text-sm sm:text-base">
         <div className="w-full text-center border-2 rounded-md border-gray-500 p-2 bg-white sm:h-96">
           <img
             className="w-20 mx-auto my-4"

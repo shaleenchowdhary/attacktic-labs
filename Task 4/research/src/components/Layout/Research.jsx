@@ -1,17 +1,17 @@
 const Research = () => {
   return (
     <div id="research">
-      <div className="w-full flex justify-center my-10">
-        <div className="w-11/12 flex items-center justify-center text-slate-800">
-          <div className="bg-blue-200 bg-opacity-30 p-10 rounded-lg shadow-md shadow-gray-400 border border-black text-left">
-            <h2 className="font-semibold lg:text-3xl mb-4 text-center">
+      <div className="w-full my-10">
+        <div className="sm:w-11/12 mx-auto px-1 text-slate-800">
+          <div className="bg-blue-200 bg-opacity-30 sm:p-10 px-2 py-4 rounded-lg shadow-md shadow-gray-400 border border-black text-left">
+            <h2 className="font-semibold sm:text-3xl text-xl mb-4 text-center">
               Department Training
             </h2>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-white">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="p-3 sm:p-10 rounded-lg border border-black mb-4 bg-white">
+              <h3 className="font-semibold sm:text-2xl text-lg">
                 Research Conclave at GIMS
               </h3>
-              <p className="">
+              <p className="sm:text-base text-sm">
                 A research conclave was organized to bring together researchers,
                 scholars, academicians, and professionals from various
                 disciplines. The purpose of this conclave was to present
@@ -19,11 +19,11 @@ const Research = () => {
                 collaborate on future projects.
               </p>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-white">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="p-3 sm:p-10 rounded-lg border border-black mb-4 bg-white">
+              <h3 className="font-semibold sm:text-2xl text-lg">
                 Regular Research Activities
               </h3>
-              <p>
+              <p className="sm:text-base text-sm">
                 The Department conducts regular research activities, including
                 training sessions, workshops, and journal clubs. Every 2nd
                 Tuesday of the month, a research promotion activity is held,
@@ -31,15 +31,15 @@ const Research = () => {
                 and universities.
               </p>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-white">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="p-3 sm:p-10 rounded-lg border border-black mb-4 bg-white">
+              <h3 className="font-semibold sm:text-2xl text-lg">
                 Training in Molecular Techniques
               </h3>
-              <h4 className="font-semibold text-lg mt-2">
+              <h4 className="font-semibold sm:text-lg text-base mt-2">
                 Training is provided in molecular techniques to the following
                 groups:
               </h4>
-              <ul className="list-disc">
+              <ul className="list-disc sm:text-base text-sm px-5">
                 <li>Undergraduate students (MBBS)</li>
                 <li>MSc students</li>
                 <li>PhD and Post-doctoral fellows</li>
@@ -49,14 +49,14 @@ const Research = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center my-10">
-        <div className="w-11/12 flex items-center justify-center text-slate-800">
-          <div className="bg-white bg-opacity-30 p-10 rounded-lg shadow-md shadow-gray-400 border border-black text-left w-full">
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+      <div className="w-full my-10">
+        <div className="sm:w-11/12 p-1 mx-auto flex items-center justify-center text-slate-800">
+          <div className="bg-white bg-opacity-30 sm:p-10 p-2 rounded-lg shadow-md shadow-gray-400 border border-black text-left w-full">
+            <div className="sm:p-10 p-4 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 flex flex-col justify-center items-center">
+              <h3 className="font-semibold sm:text-2xl text-lg text-center">
                 Research Projects under research and development wing:
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
+              <div className="flex justify-center gap-x-2 mt-4 w-full text-sm sm:text-base">
                 <div className="w-full text-center font-semibold">
                   <ul className="">
                     <li>Total</li>
@@ -74,10 +74,10 @@ const Research = () => {
               </div>
             </div>
             <div class="mx-auto my-8">
-              <h2 class="text-2xl font-semibold mb-4">
+              <h2 class="sm:text-2xl text-lg text-center font-semibold mb-4">
                 List of ongoing extramural projects:
               </h2>
-              <div class="overflow-x-auto">
+              <div class="overflow-x-auto text-xs sm:text-sm">
                 <table class="min-w-full bg-white border border-gray-200">
                   <thead>
                     <tr class="bg-blue-200 bg-opacity-30">
@@ -211,11 +211,11 @@ const Research = () => {
                 </table>
               </div>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="sm:p-10 p-4 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30">
+              <h3 className="font-semibold sm:text-2xl text-lg text-center">
                 Research Projects under research and development wing:
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
+              <div className="flex justify-center gap-x-2 mt-4 w-full text-sm">
                 <div className="w-full text-center font-semibold">
                   <ul className="">
                     <li>Short term studentship (STS) ICMR Projects</li>
@@ -235,11 +235,11 @@ const Research = () => {
               </div>
             </div>
             <div class="mx-auto my-8">
-              <h2 class="text-2xl font-semibold mb-4">
+              <h2 class="sm:text-2xl text-lg font-semibold mb-4">
                 CME/Workshops Organized By The Department
               </h2>
               <div class="overflow-x-auto">
-                <table class="min-w-full bg-white border border-gray-200">
+                <table class="min-w-full bg-white border border-gray-200 text-xs sm:text-sm">
                   <thead>
                     <tr class="bg-blue-200 bg-opacity-30">
                       <th class="py-2 px-4 border-b">Date</th>

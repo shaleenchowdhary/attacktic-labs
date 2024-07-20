@@ -14,15 +14,15 @@ import neetu_singh from '../../assets/Faculty and Staff Members/Scientific Staff
 const About = () => {
   return (
     <div className="box-border">
-      <div className="w-full flex justify-center py-10">
-        <div className="w-11/12 flex items-center justify-center text-slate-800">
-          <div className="bg-blue-200 bg-opacity-30 p-10 rounded-lg shadow-md shadow-gray-400 border border-black text-left">
-            <h2 className="font-semibold lg:text-3xl mb-4 text-center">
+      <div className="w-full flex justify-center sm:py-10 py-5">
+        <div className="sm:w-11/12 px-1 flex items-center justify-center text-slate-800">
+          <div className="bg-blue-200 bg-opacity-30 sm:p-10 p-1 rounded-lg shadow-md shadow-gray-400 border border-black text-left">
+            <h2 className="font-semibold sm:text-3xl text-xl sm:mb-4 mb-1 text-center">
               Vision & Mission Statement
             </h2>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-white">
-              <h3 className="font-semibold lg:text-2xl">Our Vision</h3>
-              <p className="font-semibold">
+            <div className="sm:p-10 p-4 rounded-lg border border-black mb-4 bg-white">
+              <h3 className="font-semibold sm:text-2xl text-lg">Our Vision</h3>
+              <p className="font-semibold text-sm sm:text-base">
                 The Department of Research & Development (Research Wing) was
                 established in 2020 and is a central facility with
                 state-of-the-art equipment to support clinical research and
@@ -33,9 +33,9 @@ const About = () => {
                 scientific manpower through collaborative projects.
               </p>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-white">
-              <h3 className="font-semibold lg:text-2xl">Our Mission</h3>
-              <ul className="font-semibold list-disc">
+            <div className="sm:p-10 py-4 px-5 rounded-lg border border-black mb-4 bg-white">
+              <h3 className="font-semibold sm:text-2xl text-lg">Our Mission</h3>
+              <ul className="font-semibold text-sm sm:text-base list-disc">
                 <li>
                   Fostering fundamental, interdisciplinary, and clinical
                   research
@@ -51,9 +51,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-full py-4 my-2 bg-blue-100">
-        <div className="text-center border-2 font-semibold rounded-md border-gray-500 w-4/5 bg-white p-8 flex">
-          <div className="w-full text-center">
+      <div className="flex justify-center w-full py-4 px-1 my-2 bg-blue-100 text-sm sm:text-base">
+        <div className="text-center border-2 font-semibold rounded-md border-gray-500 sm:w-4/5 bg-white sm:p-8 p-2 flex overflow-x-scroll text-nowrap">
+          <div className="w-full pr-4">
             <ul className="text-left">
               <li className="">Name of the Department</li>
               <li>Department Email</li>
@@ -73,17 +73,17 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center">
-        <div className="w-11/12 flex items-center justify-center text-slate-800">
-          <div className="p-10 text-left w-full">
-            <h2 className="font-semibold lg:text-3xl mb-4 text-center">
+      <div className="w-full">
+        <div className="px-1 flex items-center justify-center text-slate-800">
+          <div className="lg:p-10 text-left w-full">
+            <h2 className="font-semibold sm:text-3xl text-lg mb-4 text-center">
               Faculty and Staff Members
             </h2>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="p-2 md:p-5 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
+              <h3 className="font-semibold sm:text-2xl text-lg">
                 Faculty Members at Research Wing
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-4 gap-2 mt-4 w-full text-sm sm:text-base">
                 <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
                   <img
                     className="w-20 mx-auto mb-4"
@@ -194,8 +194,6 @@ const About = () => {
                     <li className="font-semibold">26-02-2020</li>
                   </ul>
                 </div>
-              </div>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
                 <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
                   <img
                     className="w-20 mx-auto mb-4"
@@ -263,44 +261,13 @@ const About = () => {
                     <li className="font-semibold">20-02-2020</li>
                   </ul>
                 </div>
-                <div className="w-full text-center p-2 py-4 font-semibold">
-                  {/* <img className="w-20 mx-auto mb-4" src={varun_goel} alt="" />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Varun Goel
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MD (Microbiology)
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      VRDL Nodal Officer
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Microbiology</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">20-02-2020</li>
-                  </ul> */}
-                </div>
               </div>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="p-2 md:p-5 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
+              <h3 className="font-semibold sm:text-2xl text-lg">
                 Scientific Staff at the Research Wing
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-4 gap-2 mt-4 w-full text-sm sm:text-base">
                 <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
                   <img
                     className="w-20 mx-auto mb-4"
@@ -405,8 +372,6 @@ const About = () => {
                     <li className="font-semibold">12-04-2023</li>
                   </ul>
                 </div>
-              </div>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
                 <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
                   <img
                     className="w-20 mx-auto mb-4"
@@ -500,8 +465,6 @@ const About = () => {
                     <li className="font-semibold">03-10-2023</li>
                   </ul>
                 </div>
-              </div>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
                 <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
                   <img className="w-20 mx-auto mb-4" src={neetu_singh} alt="" />
                   <ul className="text-left px-5">
@@ -533,76 +496,13 @@ const About = () => {
                     <li className="font-semibold">14-06-2024</li>
                   </ul>
                 </div>
-                <div className="w-full text-center p-2 py-4 font-semibold">
-                  {/* <img className="w-20 mx-auto mb-4" src={neetu_singh} alt="" />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Mrs. Neetu Singh
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MTech Biotechnology
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Research Assistant
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Genetic Engineering</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">14-06-2024</li>
-                  </ul> */}
-                </div>
-
-                <div className="w-full text-center p-2 py-4 font-semibold">
-                  {/* <img className="w-20 mx-auto mb-4" src={neetu_singh} alt="" />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Mrs. Neetu Singh
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MTech Biotechnology
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Research Assistant
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Genetic Engineering</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">14-06-2024</li>
-                  </ul> */}
-                </div>
               </div>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="px-2 py-4 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
+              <h3 className="font-semibold sm:text-2xl text-lg">
                 Non-Teaching Staff of Research Wing
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
+              <div className="flex justify-center gap-x-2 mt-4 w-full text-sm sm:text-base">
                 <div className="w-full text-center font-semibold">
                   <ul className="">
                     <li>Lab Techinican</li>
@@ -622,18 +522,18 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center">
-        <div className="w-11/12 flex items-center justify-center text-slate-800">
-          <div className="p-10 text-left w-full">
-            <h2 className="font-semibold lg:text-3xl mb-4 text-center">
+      <div className="w-full">
+        <div className="text-slate-800">
+          <div className="md:p-10 p-1 text-left w-full">
+            <h2 className="font-semibold sm:text-3xl text-xl mb-4 text-center">
               Departmental Information
             </h2>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="md:p-5 p-2 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
+              <h3 className="text-center font-semibold sm:text-2xl text-lg">
                 Molecular Diagnostics and Research Laboratory (MDRL)
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
+              <div className="mt-4 w-full">
+                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold text-sm sm:text-base">
                   <ul className="text-left px-5 list-disc">
                     <li>
                       Molecular Diagnostics and Research Laboratory (MDRL) was
@@ -676,12 +576,12 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="md:p-5 p-2 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
+              <h3 className="text-center font-semibold sm:text-2xl text-lg">
                 Multi-disciplinary Research Unit (MRU)
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
+              <div className="mt-4 w-full">
+                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold text-sm sm:text-base">
                   <ul className="text-left px-5 list-disc">
                     <li>
                       MRU is mainly related to promoting, coordinating, and
@@ -709,12 +609,12 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="md:p-5 p-2 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
+              <h3 className="text-center font-semibold sm:text-2xl text-lg">
                 Viral Research and Diagnostics Laboratory (VRDL)
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
+              <div className="mt-4 w-full">
+                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold text-sm sm:text-base">
                   <ul className="text-left px-5 list-disc">
                     <li>
                       The Viral Research and diagnostic research laboratory was
@@ -758,12 +658,12 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="p-10 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
-              <h3 className="font-semibold lg:text-2xl">
+            <div className="md:p-5 p-2 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
+              <h3 className="text-center font-semibold sm:text-2xl text-lg">
                 Genome Sequencing Facility
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full">
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
+              <div className="mt-4 w-full">
+                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold text-sm sm:text-base">
                   <ul className="text-left px-5 list-disc">
                     <li>
                       The genome sequencing facility is a state-of-the-art
@@ -795,14 +695,14 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-full py-4 my-2 bg-blue-100">
-        <div className="border-2 font-semibold rounded-md border-gray-500 w-4/5 bg-white p-8">
+      <div className="w-full py-4 px-1 my-2 bg-blue-100">
+        <div className="mx-auto border-2 font-semibold rounded-md border-gray-500 md:w-4/5 w-full bg-white p-7">
           <div className="w-full text-left">
-            <h3 className="font-semibold text-lg mb-2">
+            <h3 className="font-semibold text-lg sm:text-xl mb-2">
               The scope of research wing at Institute includes to do all types
               basic and advanced molecular testing and research work in:
             </h3>
-            <ul className="text-left list-disc">
+            <ul className="text-left sm:text-base text-sm list-disc">
               <li>Molecular testing in oncology</li>
               <li>Molecular testing in infectious diseases</li>
               <li>Molecular testing in genetic diseases</li>
