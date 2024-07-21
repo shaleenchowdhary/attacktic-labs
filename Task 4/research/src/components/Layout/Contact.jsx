@@ -3,7 +3,7 @@ const Contact = () => {
 
   return (
     <div className="w-full py-10">
-      <div className="sm:w-11/12 w-full h-3/5 grid grid-cols-1 gap-4 md:grid-cols-2 sm:p-5 p-2 sm:border border-none border-black rounded-lg sm:shadow-md shadow-gray-500 sm:mx-auto">
+      <div className="sm:w-11/12 w-full h-3/5 grid grid-cols-1 gap-4 md:grid-cols-2 sm:p-5 p-2 sm:border border-black rounded-lg sm:shadow-md shadow-gray-500 sm:mx-auto">
         <div className="w-full h-full sm:border-none border border-black rounded-lg p-3">
           <form className="sm:text-xl text-base py-4">
             <div className="flex flex-col text-left">
