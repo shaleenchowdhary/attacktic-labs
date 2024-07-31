@@ -10,10 +10,113 @@ import asiya_khan from '../../assets/Faculty and Staff Members/Scientific Staff 
 import kirti_devi from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Kirti_Devi.jpg';
 import ambika from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Ambika.jpg';
 import neetu_singh from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Neetu_Singh.jpg';
+import Carousel from './Carousel';
 
 const About = () => {
+  const facultyMembers = [
+    {
+      photo: rakesh_gupta,
+      name: 'Dr. (Brig) Rakesh Gupta',
+      qualification: 'MD (Pead), M Phil (HHSM), Director, GIMS',
+      researchField: 'Neonatology, HIV',
+      dateOfJoining: '21.07.2018',
+    },
+    {
+      photo: saurabh_srivastva,
+      name: 'Dr. Saurabh Srivastava',
+      qualification:
+        'Professor & Head, Dept. of Medicine and CMS, MRU Nodal Officer',
+      researchField: 'Diabetes, Obesity, Metabolic disorders',
+      dateOfJoining: '28.12.2018',
+    },
+    {
+      photo: vivek_gupta,
+      name: 'Dr. Vivek Gupta',
+      qualification:
+        'MD (Pathology), PhD, DHR-ICMR Fellowship from, USA, HoD, Dept. of Research & Development, Associate Professor, Dept. of Pathology',
+      researchField:
+        'Molecular Genetic Pathology, Hematological Malignancies, Solid tumors, Infectious diseases',
+      dateOfJoining: '26.02.2020',
+    },
+    {
+      photo: rupali_mathur,
+      name: 'Dr. Rupali Mathur',
+      qualification:
+        'MDS (Periodontics), Associate Professor, Dept. of Dentistry',
+      researchField: '',
+      dateOfJoining: '01.10.2022',
+    },
+    {
+      photo: varun_goel,
+      name: 'Dr. Varun Goel',
+      qualification: 'MD (Microbiology), VRDL Nodal Officer',
+      researchField: 'Microbiology',
+      dateOfJoining: '20.02.2020',
+    },
+  ];
+  const scientificStaff = [
+    {
+      photo: ravi_kumar_chaudhary,
+      name: 'Dr. Ravi Kumar Chaudhary',
+      qualification:
+        'MTech (Genetic Eng.), PhD (Biotechnology), Senior Principal Scientist',
+      researchField: 'Nanomolecular diagnostics, Regenerative Medicine',
+      dateOfJoining: '21.11.2023',
+    },
+    {
+      photo: mohd_kaushar_neyaz,
+      name: 'Dr. Mohd Kaushar Neyaz',
+      qualification: 'PhD, Senior Scientist',
+      researchField: 'HPV and Cancer',
+      dateOfJoining: '2020',
+    },
+    {
+      photo: varun_chauhan,
+      name: 'Dr. Varun Chauhan',
+      qualification: 'PhD Parasitology, Scientist-C',
+      researchField: 'Microbiology, Immuno informatics',
+      dateOfJoining: '12.04.2023',
+    },
+    {
+      photo: asiya_khan,
+      name: 'Dr. Asiya Khan',
+      qualification: 'PhD Biotechnology, Scientist-B',
+      researchField: 'Molecular Diagnostics, Cancer biology, Immune markers',
+      dateOfJoining: '1.07.2024',
+    },
+    {
+      photo: kirti_devi,
+      name: 'Dr. Kirti Devi',
+      qualification: 'PhD Biotechnology, Scientist-B',
+      researchField: 'Metabolic health and prebiotic',
+      dateOfJoining: '04.04.2023',
+    },
+    {
+      photo: ambika,
+      name: 'Dr. Ambika',
+      qualification: 'PhD Life Sciences, Scientist-B',
+      researchField: 'Molecular and Microbial Genetics',
+      dateOfJoining: '03.10.2023',
+    },
+    {
+      photo: neetu_singh,
+      name: 'Mrs. Neetu Singh',
+      qualification: 'MTech Biotechnology, Research Assistant',
+      researchField: 'Genetic Engineering',
+      dateOfJoining: '14.06.2024',
+    },
+  ];
+  const nonTeachingStaff = [
+    { position: 'Lab Technician', count: 4 },
+    { position: 'Lab Attendant', count: 2 },
+    { position: 'Data Entry Operator', count: 1 },
+  ];
   return (
     <div className="box-border">
+      <div className="m-4 p-2 py-4 rounded-lg bg-blue-100 sm:text-3xl text-xl font-semibold border">
+        Department of Research & Development
+      </div>
+      <Carousel />
       <div className="w-full flex justify-center sm:py-10 py-5">
         <div className="sm:w-11/12 px-1 flex items-center justify-center text-slate-800">
           <div className="bg-blue-200 bg-opacity-30 sm:p-10 p-1 rounded-lg shadow-md shadow-gray-400 border border-black text-left">
@@ -52,7 +155,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex justify-center w-full py-4 px-1 my-2 bg-blue-100 text-sm sm:text-base">
-        <div className="text-center border-2 font-semibold rounded-md border-gray-500 sm:w-4/5 bg-white sm:p-8 p-2 flex overflow-x-scroll text-nowrap">
+        <div className="text-center border-2 font-semibold rounded-md border-gray-500 sm:w-4/5 bg-white sm:p-8 p-2 flex overflow-x-scroll text-nowrap text-xs sm:text-base">
           <div className="w-full pr-4">
             <ul className="text-left">
               <li className="">Name of the Department</li>
@@ -83,446 +186,139 @@ const About = () => {
               <h3 className="font-semibold sm:text-2xl text-lg">
                 Faculty Members at Research Wing
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-4 gap-2 mt-4 w-full text-sm sm:text-base">
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img
-                    className="w-20 mx-auto mb-4"
-                    src={rakesh_gupta}
-                    alt=""
-                  />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. (Brig) Rakesh Gupta
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MD(Pead), M Phil (HHSM)
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Director, GIMS
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Neonatology</li>
-                      <li className="">HIV</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">21-07-2018</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img
-                    className="w-20 mx-auto mb-4"
-                    src={saurabh_srivastva}
-                    alt=""
-                  />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Saurabh Srivastava
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Professor & Head, Dept. of Medicine and CMS
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MRU Nodal Officer
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Diabetes</li>
-                      <li className="">Obesity</li>
-                      <li className="">Metabolic disorders</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">28-12-2018</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img className="w-20 mx-auto mb-4" src={vivek_gupta} alt="" />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Vivek Gupta
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MD (Pathology), PhD, DHR-ICMR Fellowship from, USA
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">HoD, Dept. of Research & Development</li>
-                      <li className="">
-                        Associate Professor, Dept. of Pathology
-                      </li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Molecular Genetic Pathology</li>
-                      <li className="">Hematological Malignancies</li>
-                      <li className="">Solid tumors</li>
-                      <li className="">Infectious diseases</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">26-02-2020</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img
-                    className="w-20 mx-auto mb-4"
-                    src={rupali_mathur}
-                    alt=""
-                  />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Rupali Mathur
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MDS (Periodontics)
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Associate Professor, Dept. of Dentistry
-                    </li>
-                  </ul>
-                  {/* <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className=""></li>
-                      <li className=""></li>
-                    </ul>
-                  </ul> */}
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">01-10-2022</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img className="w-20 mx-auto mb-4" src={varun_goel} alt="" />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Varun Goel
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MD (Microbiology)
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      VRDL Nodal Officer
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Microbiology</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">20-02-2020</li>
-                  </ul>
-                </div>
+              <div className="mx-auto w-full my-6 overflow-x-auto text-xs sm:text-base">
+                <table className="min-w-full bg-white border border-gray-200">
+                  <thead>
+                    <tr className="">
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        S. No
+                      </th>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        Faculty Photo
+                      </th>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        Name, Qualification, Appointment
+                      </th>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        Research Field
+                      </th>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        Date of Joining
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="font-semibold">
+                    {facultyMembers.map((faculty, index) => (
+                      <tr key={index}>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          {index + 1}
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          <img
+                            src={faculty.photo}
+                            alt={`Faculty ${index + 1}`}
+                            // className="h-26 w-20 object-cover"
+                          />
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          {faculty.name}
+                          <br />
+                          {faculty.qualification}
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          {faculty.researchField}
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          {faculty.dateOfJoining}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
             <div className="p-2 md:p-5 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
               <h3 className="font-semibold sm:text-2xl text-lg">
                 Scientific Staff at the Research Wing
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-4 gap-2 mt-4 w-full text-sm sm:text-base">
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img
-                    className="w-20 mx-auto mb-4"
-                    src={ravi_kumar_chaudhary}
-                    alt="Dr. Ravi Kumar Chaudhary"
-                  />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Ravi Kumar Chaudhary
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MTech (Genetic Eng.), PhD (Biotechnology)
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Senior Principal Scientist
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Nanomolecular diagnostics</li>
-                      <li className="">Regenerative Medicine</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">21-11-2023</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img
-                    className="w-20 mx-auto mb-4"
-                    src={mohd_kaushar_neyaz}
-                    alt=""
-                  />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Mohd Kaushar Neyaz
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">PhD</li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Senior Scientist
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">HPV</li>
-                      <li className="">Cancer</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">2020</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img
-                    className="w-20 mx-auto mb-4"
-                    src={varun_chauhan}
-                    alt=""
-                  />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Varun Chauhan
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      PhD Parasitology
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">Scientist-C</li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Microbiology</li>
-                      <li className="">Immuno informatics</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">12-04-2023</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img
-                    className="w-20 mx-auto mb-4"
-                    src={asiya_khan}
-                    alt="Dr. Ravi Kumar Chaudhary"
-                  />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Asiya Khan
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      PhD Biotechnology
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">Scientist-B</li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Molecular Diagnostics</li>
-                      <li className="">Cancer biology</li>
-                      <li className="">Immune makers</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">01-07-2024</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img className="w-20 mx-auto mb-4" src={kirti_devi} alt="" />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Dr. Kirti Devi
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      PhD Biotechnology
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">Scientist-B</li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Metabolic health</li>
-                      <li className="">prebiotic</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">04-04-2023</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img className="w-20 mx-auto mb-4" src={ambika} alt="" />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      PhD Life Sciences
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">Scientist-B</li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">Scientist-C</li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Molecular Genetics</li>
-                      <li className="">Microbial Genetics</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">03-10-2023</li>
-                  </ul>
-                </div>
-                <div className="w-full bg-white text-center border-2 rounded-md border-gray-500 p-2 py-4 font-semibold">
-                  <img className="w-20 mx-auto mb-4" src={neetu_singh} alt="" />
-                  <ul className="text-left px-5">
-                    <li>Name:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Mrs. Neetu Singh
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Qualification:</li>
-                    <li className="border-b-2 border-gray-400">
-                      MTech Biotechnology
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Appointment:</li>
-                    <li className="border-b-2 border-gray-400">
-                      Research Assistant
-                    </li>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Research Field:</li>
-                    <ul className="list-disc border-b-2 border-gray-400">
-                      <li className="">Genetic Engineering</li>
-                    </ul>
-                  </ul>
-                  <ul className="text-left px-5">
-                    <li>Date of Joining:</li>
-                    <li className="font-semibold">14-06-2024</li>
-                  </ul>
-                </div>
+              <div className="mx-auto w-full my-6 overflow-x-auto text-xs sm:text-base">
+                <table className="min-w-full bg-white border border-gray-200">
+                  <thead>
+                    <tr>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        S. No.
+                      </th>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        Scientific Staff Photo
+                      </th>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        Name, Qualification, Appointment
+                      </th>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        Research Field
+                      </th>
+                      <th className="py-2 px-4 border-b border-gray-400">
+                        Date of Joining
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="font-semibold">
+                    {scientificStaff.map((staff, index) => (
+                      <tr key={index}>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          {index + 1}
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          <img
+                            src={staff.photo}
+                            alt={`Staff ${index + 1}`}
+                            className="h-26 w-20 object-cover"
+                          />
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          {staff.name}
+                          <br />
+                          {staff.qualification}
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          {staff.researchField}
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-400">
+                          {staff.dateOfJoining}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
             <div className="px-2 py-4 rounded-lg border border-black mb-4 bg-blue-200 bg-opacity-30 shadow-md shadow-gray-400 flex flex-col justify-center items-center">
               <h3 className="font-semibold sm:text-2xl text-lg">
                 Non-Teaching Staff of Research Wing
               </h3>
-              <div className="flex justify-center gap-x-2 mt-4 w-full text-sm sm:text-base">
-                <div className="w-full text-center font-semibold">
-                  <ul className="">
-                    <li>Lab Techinican</li>
-                    <li>Lab Attendant</li>
-                    <li>Data Entry Operator</li>
-                  </ul>
-                </div>
-                <div className="w-full text-center">
-                  <ul className="">
-                    <li className="font-bold">04</li>
-                    <li className="font-bold">02</li>
-                    <li className="font-bold">01</li>
-                  </ul>
-                </div>
+              <div className="flex justify-center mt-4 w-full text-sm sm:text-base">
+                <table className="min-w-full bg-white border border-gray-200 text-center">
+                  <thead>
+                    <tr className="border-b border-gray-400">
+                      <th className="py-2 px-4 font-semibold">Position</th>
+                      <th className="py-2 px-4 font-semibold">Count</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {nonTeachingStaff.map((staff, index) => (
+                      <tr className="border-b border-gray-400" key={index}>
+                        <td className="py-2 px-4">{staff.position}</td>
+                        <td className="py-2 px-4 font-bold">{staff.count}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full">
+      {/* <div className="w-full">
         <div className="text-slate-800">
           <div className="md:p-10 p-1 text-left w-full">
             <h2 className="font-semibold sm:text-3xl text-xl mb-4 text-center">
@@ -694,7 +490,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="w-full py-4 px-1 my-2 bg-blue-100">
         <div className="mx-auto border-2 font-semibold rounded-md border-gray-500 md:w-4/5 w-full bg-white p-7">
           <div className="w-full text-left">

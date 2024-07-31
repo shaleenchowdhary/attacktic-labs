@@ -197,19 +197,27 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-800 py-4 text-xs sm:text-sm">
+      <div className="bg-gray-800 pt-4 text-xs sm:text-sm">
         <div className="container mx-auto">
           <div className="text-center">
             <p>
               Copyright © 2024 GIMS. All Rights Reserved | Designed and
               Developed by{' '}
               <a
+                target="_blank"
                 href="https://www.attackticlabs.com"
-                className="text-blue-400 font-semibold hover:text-white transition-colors duration"
+                className="text-blue-400 hover:text-white leading-none transition-colors duration-300"
               >
                 ATTACKTIC LABS
-              </a>
+              </a>{' '}
             </p>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/shaleenchowdhary/"
+              className="text-gray-800 text-xs leading-normal hover:text-white transition-colors duration-300"
+            >
+              Shaleen Chowdhary
+            </a>
           </div>
         </div>
       </div>
