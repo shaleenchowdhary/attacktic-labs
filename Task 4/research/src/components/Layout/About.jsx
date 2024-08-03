@@ -10,7 +10,6 @@ import asiya_khan from '../../assets/Faculty and Staff Members/Scientific Staff 
 import kirti_devi from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Kirti_Devi.jpg';
 import ambika from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Ambika.jpg';
 import neetu_singh from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Neetu_Singh.jpg';
-import Carousel from './Carousel';
 
 const About = () => {
   const facultyMembers = [
@@ -116,8 +115,7 @@ const About = () => {
       <div className="m-4 p-2 py-4 rounded-lg bg-blue-100 sm:text-3xl text-xl font-semibold border">
         Department of Research & Development
       </div>
-      <Carousel />
-      <div className="w-full flex justify-center sm:py-10 py-5">
+      <div className="w-full flex justify-center sm:py-10 py-5 sm:pt-0 pt-0">
         <div className="sm:w-11/12 px-1 flex items-center justify-center text-slate-800">
           <div className="bg-blue-200 bg-opacity-30 sm:p-10 p-1 rounded-lg shadow-md shadow-gray-400 border border-black text-left">
             <h2 className="font-semibold sm:text-3xl text-xl sm:mb-4 mb-1 text-center">
@@ -190,19 +188,19 @@ const About = () => {
                 <table className="min-w-full bg-white border border-gray-200">
                   <thead>
                     <tr className="">
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         S. No
                       </th>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         Faculty Photo
                       </th>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         Name, Qualification, Appointment
                       </th>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         Research Field
                       </th>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         Date of Joining
                       </th>
                     </tr>
@@ -210,25 +208,25 @@ const About = () => {
                   <tbody className="font-semibold">
                     {facultyMembers.map((faculty, index) => (
                       <tr key={index}>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           {index + 1}
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           <img
                             src={faculty.photo}
                             alt={`Faculty ${index + 1}`}
                             // className="h-26 w-20 object-cover"
                           />
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           {faculty.name}
                           <br />
                           {faculty.qualification}
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           {faculty.researchField}
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           {faculty.dateOfJoining}
                         </td>
                       </tr>
@@ -245,19 +243,19 @@ const About = () => {
                 <table className="min-w-full bg-white border border-gray-200">
                   <thead>
                     <tr>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         S. No.
                       </th>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         Scientific Staff Photo
                       </th>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         Name, Qualification, Appointment
                       </th>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         Research Field
                       </th>
-                      <th className="py-2 px-4 border-b border-gray-400">
+                      <th className="py-2 px-4 border border-gray-400">
                         Date of Joining
                       </th>
                     </tr>
@@ -265,25 +263,25 @@ const About = () => {
                   <tbody className="font-semibold">
                     {scientificStaff.map((staff, index) => (
                       <tr key={index}>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           {index + 1}
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           <img
                             src={staff.photo}
                             alt={`Staff ${index + 1}`}
                             className="h-26 w-20 object-cover"
                           />
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           {staff.name}
                           <br />
                           {staff.qualification}
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           {staff.researchField}
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-400">
+                        <td className="py-2 px-4 border border-gray-400">
                           {staff.dateOfJoining}
                         </td>
                       </tr>
@@ -299,16 +297,24 @@ const About = () => {
               <div className="flex justify-center mt-4 w-full text-sm sm:text-base">
                 <table className="min-w-full bg-white border border-gray-200 text-center">
                   <thead>
-                    <tr className="border-b border-gray-400">
-                      <th className="py-2 px-4 font-semibold">Position</th>
-                      <th className="py-2 px-4 font-semibold">Count</th>
+                    <tr className="">
+                      <th className="py-2 px-4 font-semibold border border-gray-400">
+                        Position
+                      </th>
+                      <th className="py-2 px-4 font-semibold border border-gray-400">
+                        Count
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     {nonTeachingStaff.map((staff, index) => (
-                      <tr className="border-b border-gray-400" key={index}>
-                        <td className="py-2 px-4">{staff.position}</td>
-                        <td className="py-2 px-4 font-bold">{staff.count}</td>
+                      <tr className="" key={index}>
+                        <td className="py-2 px-4 border border-gray-400">
+                          {staff.position}
+                        </td>
+                        <td className="py-2 px-4 font-bold border border-gray-400">
+                          {staff.count}
+                        </td>
                       </tr>
                     ))}
                   </tbody>

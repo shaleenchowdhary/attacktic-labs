@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Carousel = () => {
   const images = [
@@ -18,7 +18,7 @@ const Carousel = () => {
   }, [images.length]);
 
   return (
-    <div className="w-full overflow-hidden p-4 pb-0 sm:h-[550px]">
+    <div className="w-full overflow-hidden p-4 sm:h-[550px]">
       <div
         className="whitespace-nowrap transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}

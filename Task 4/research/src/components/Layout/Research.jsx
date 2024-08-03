@@ -11,26 +11,42 @@ const Research = () => {
               <h3 className="font-semibold text-base sm:text-xl text-center">
                 Research Projects under research and development wing:
               </h3>
-              <div className="mt-4 w-full text-xs sm:text-sm bg-white border border-gray-400">
-                <table className="min-w-full bg-white border-gray-400">
+              <div className="mt-4 w-full text-xs sm:text-sm bg-white">
+                <table className="min-w-full bg-white">
                   <thead className="">
-                    <tr className="border-gray-400 border-b">
-                      <th className="py-2 px-4 text-center">Status</th>
-                      <th className="py-2 px-4 text-center">Count</th>
+                    <tr className="">
+                      <th className="py-2 px-4 text-center border-gray-400 border">
+                        Status
+                      </th>
+                      <th className="py-2 px-4 text-center border-gray-400 border">
+                        Count
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-gray-400">
-                      <td className="py-2 px-4 text-center">Total</td>
-                      <td className="py-2 px-4 text-center font-bold">24</td>
-                    </tr>
-                    <tr className="border-gray-400 border-b">
-                      <td className="py-2 px-4 text-center">Completed</td>
-                      <td className="py-2 px-4 text-center font-bold">15</td>
+                    <tr className="">
+                      <td className="py-2 px-4 text-center border border-gray-400">
+                        Total
+                      </td>
+                      <td className="py-2 px-4 text-center font-bold border border-gray-400">
+                        24
+                      </td>
                     </tr>
                     <tr className="">
-                      <td className="py-2 px-4 text-center">Ongoing</td>
-                      <td className="py-2 px-4 text-center font-bold">09</td>
+                      <td className="py-2 px-4 text-center border border-gray-400">
+                        Completed
+                      </td>
+                      <td className="py-2 px-4 text-center font-bold border border-gray-400">
+                        15
+                      </td>
+                    </tr>
+                    <tr className="">
+                      <td className="py-2 px-4 text-center border border-gray-400">
+                        Ongoing
+                      </td>
+                      <td className="py-2 px-4 text-center font-bold border border-gray-400">
+                        09
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -189,29 +205,39 @@ const Research = () => {
                 Research Projects under research and development wing:
               </h3>
               <div className="mt-4 w-full text-xs sm:text-sm bg-white">
-                <table className="w-full text-left border-collapse border border-gray-400 ">
+                <table className="w-full text-left border-collapse">
                   <thead>
                     <tr>
-                      <th className="p-2 font-semibold">Project/Publication</th>
-                      <th className="p-2 font-semibold">Count</th>
+                      <th className="p-2 font-semibold border border-gray-400">
+                        Project/Publication
+                      </th>
+                      <th className="p-2 font-semibold border border-gray-400">
+                        Count
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="p-2">
+                      <td className="p-2 border border-gray-400">
                         Short term studentship (STS) ICMR Projects
                       </td>
-                      <td className="p-2 font-bold">Total 17</td>
+                      <td className="p-2 font-bold border border-gray-400">
+                        Total 17
+                      </td>
                     </tr>
                     <tr>
-                      <td className="p-2">
+                      <td className="p-2 border border-gray-400">
                         Intramural Projects of Research Wing
                       </td>
-                      <td className="p-2 font-bold">Total 176</td>
+                      <td className="p-2 font-bold border border-gray-400">
+                        Total 176
+                      </td>
                     </tr>
                     <tr>
-                      <td className="p-2">Publications of Research Wing</td>
-                      <td className="p-2 font-bold">
+                      <td className="p-2 border border-gray-400">
+                        Publications of Research Wing
+                      </td>
+                      <td className="p-2 font-bold border border-gray-400">
                         <i className="fa-solid fa-greater-than"></i>400
                       </td>
                     </tr>
@@ -227,14 +253,18 @@ const Research = () => {
                 <table className="min-w-full bg-white border border-gray-200 text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-blue-200 bg-opacity-30">
-                      <th className="py-2 px-4 border-b">Date</th>
-                      <th className="py-2 px-4 border-b">Topic</th>
+                      <th className="py-2 px-4 border border-gray-400">Date</th>
+                      <th className="py-2 px-4 border border-gray-400">
+                        Topic
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="py-2 px-4 border-b">3rd & 4th Nov 2022</td>
-                      <td className="py-2 px-4 border-b">
+                      <td className="py-2 px-4 border border-gray-400">
+                        3rd & 4th Nov 2022
+                      </td>
+                      <td className="py-2 px-4 border border-gray-400">
                         Basic Molecular Diagnostic Techniques Jointly Organized
                         by Molecular Diagnostics and Research Laboratory,
                         Government Institute of Medical Sciences, Greater Noida
@@ -242,8 +272,10 @@ const Research = () => {
                       </td>
                     </tr>
                     <tr>
-                      <td className="py-2 px-4 border-b">16th Jan 2024</td>
-                      <td className="py-2 px-4 border-b">
+                      <td className="py-2 px-4 border border-gray-400">
+                        16th Jan 2024
+                      </td>
+                      <td className="py-2 px-4 border border-gray-400">
                         First MRU Conclave: Research Promotions for Research
                         Projects & Funding Opportunities
                       </td>
