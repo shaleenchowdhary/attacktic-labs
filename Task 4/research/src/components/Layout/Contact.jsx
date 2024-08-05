@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="w-full h-full sm:border-none border border-black rounded-lg p-3">
           <form
             action="../../../mail.php"
-            className="sm:text-xl text-base py-4"
+            className="sm:text-xl text-base sm:py-4"
           >
             <div className="text-3xl text-left font-semibold">Get in touch</div>
             <div className="sm:text-xl text-base text-left pb-8">
@@ -48,7 +48,7 @@ const Contact = () => {
                 className="border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
-            <button className="bg-blue-800 w-full my-10 text-white px-8 py-2 rounded-lg font-semibold hover:bg-blue-200 hover:text-blue-800">
+            <button className="bg-blue-800 w-full sm:mt-5 mt-2 text-white px-8 py-2 rounded-lg font-semibold hover:bg-blue-200 hover:text-blue-800">
               Submit
             </button>
           </form>

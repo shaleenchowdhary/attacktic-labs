@@ -10,6 +10,7 @@ import asiya_khan from '../../assets/Faculty and Staff Members/Scientific Staff 
 import kirti_devi from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Kirti_Devi.jpg';
 import ambika from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Ambika.jpg';
 import neetu_singh from '../../assets/Faculty and Staff Members/Scientific Staff at the Research Wing/Neetu_Singh.jpg';
+import Carousel from './Carousel';
 
 const About = () => {
   const facultyMembers = [
@@ -115,6 +116,7 @@ const About = () => {
       <div className="m-4 p-2 py-4 rounded-lg bg-blue-100 sm:text-3xl text-xl font-semibold border">
         Department of Research & Development
       </div>
+      <Carousel />
       <div className="w-full flex justify-center sm:py-10 py-5 sm:pt-0 pt-0">
         <div className="sm:w-11/12 px-1 flex items-center justify-center text-slate-800">
           <div className="bg-blue-200 bg-opacity-30 sm:p-10 p-1 rounded-lg shadow-md shadow-gray-400 border border-black text-left">
